@@ -1,0 +1,118 @@
+{
+    "id": "ExtBox1-ext-gen25120",
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "groupDir": "ASC",
+        "groupField": "ChanNum",
+        "model": "ChannelModel",
+        "pageSize": null,
+        "remoteFilter": null,
+        "storeId": "ProgramGuide",
+        "designer|userClassName": "ProgramGuide"
+    },
+    "customConfigs": [],
+    "designerId": "3b9940ba-b6fe-4808-96e5-c6b529ef39cf",
+    "$viewOrder": 1,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen3837",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "directionParam": "",
+                "enablePagingParams": false,
+                "extraParams": "{Details: true}",
+                "filterParam": "",
+                "groupParam": "",
+                "limitParam": "",
+                "noCache": false,
+                "pageParam": "",
+                "sortParam": "",
+                "startParam": "",
+                "url": "xml-proxy.php?Guide/GetProgramGuide",
+                "designer|userClassName": "MyAjaxProxy1"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen4548",
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "idProperty": "ChanId",
+                        "rootProperty": "ProgramGuide.Channels",
+                        "totalProperty": "Count",
+                        "designer|userClassName": "MyJsonReader1"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen12987",
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    "",
+                    "dt = new XDate(true); // current date & time as UTC",
+                    "",
+                    "theproxy = store.getProxy();",
+                    "theproxy.setExtraParam('StartTime', Ext.Date.format(dt, 'Y-m-d\\\\TH:i:00'));",
+                    "",
+                    "dt.addHours(4);",
+                    "theproxy.setExtraParam('EndTime', Ext.Date.format(dt, 'Y-m-d\\\\TH:i:00'));",
+                    ""
+                ],
+                "name": "beforeload",
+                "designer|userClassName": "onJsonstoreBeforeLoad"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen18909",
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreRefresh",
+                "implHandler": [
+                    "store.each(function (record) {",
+                    "    record.ProgramsStore.sort('StartTime', 'ASC');",
+                    "});",
+                    ""
+                ],
+                "name": "refresh",
+                "designer|userClassName": "onJsonstoreRefresh"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

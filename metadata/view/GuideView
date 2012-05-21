@@ -1,0 +1,51 @@
+{
+    "id": "ExtBox1-ext-gen28292",
+    "type": "navigationview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "useTitleForBackButtonText": true,
+        "designer|userClassName": "GuideView",
+        "designer|userAlias": "guideview"
+    },
+    "customConfigs": [],
+    "designerId": "a519079b-044e-43cf-a492-5f23ea86b6fa",
+    "$viewOrder": 4,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen37142",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Guide"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen25801"
+        },
+        {
+            "id": "ExtBox1-ext-gen38349",
+            "type": "navigationbar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNavigationBar1"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-navbar",
+            "expanded": true
+        }
+    ]
+}

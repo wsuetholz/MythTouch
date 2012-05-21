@@ -1,0 +1,27 @@
+{
+    "id": "ExtBox1-ext-gen28960",
+    "type": "dataview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "docked": null,
+        "html": "<table width=\"100%\" border=\"0\" cellpadding=\"4\" cellspaceing=\"2\" class=\"list small\"><tr><td class=\"x-channel\">Channel</td><td>00:00</td><td>00:00</td><td>00:00</td><td>00:00</td></tr></table>",
+        "ui": "light",
+        "width": null,
+        "scrollable": "both",
+        "emptyText": "Something went wrong, I can't find anything!",
+        "inline": null,
+        "itemTpl": "<table width=\"100%\" border=\"0\" cellpadding=\"4\" cellspacing=\"2\" class=\"list small\">\n<tbody>\n<tpl for=\".\">\n   <tr>\n        <td class=\"x-channel\" halign=\"center\"><img src=\"{IconURL}\" style=\"padding: 5px;\"><br />{ChannelName}</td>\n        <tpl for=\"Programs\">\n                 <td class=\"program small cat_{[ values.Category.split(\"/\")[0].toTitleCase().replace(\" \", \"_\") ]} record_{[ recStatus[values.Recording.Status].toLowerCase().replace(\" \", \"_\") ]}\" valign=\"top\">{Title}<tpl if=\"SubTitle != ''\">:<br />{SubTitle}<br /></tpl>\n{%\n for (i =1; i < values.Stars; i++) {\n    if (i == 1) {\n       out.push(\"<br />\");\n     }\n     out.push(\"★\");\n}\n%}\n</td>\n        </tpl>\n  </tr>\n</tpl>\n</table>",
+        "store": "ProgramGuide",
+        "useComponents": false,
+        "designer|userClassName": "GuideDataView",
+        "designer|userAlias": "guidedataview"
+    },
+    "customConfigs": [],
+    "designerId": "38fbf899-af5b-4be5-9141-736292e48cc0",
+    "$viewOrder": 8,
+    "expanded": true
+}

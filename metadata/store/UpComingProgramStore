@@ -1,0 +1,123 @@
+{
+    "id": "ExtBox1-ext-gen24107",
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "groupDir": null,
+        "groupField": null,
+        "model": "UpComingProgramModel",
+        "storeId": "UpComingProgramStore",
+        "designer|userClassName": "UpComingProgramStore"
+    },
+    "customConfigs": [],
+    "designerId": "b13a7872-824e-4c17-adda-3fe07081254d",
+    "$viewOrder": 0,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen24114",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "enablePagingParams": false,
+                "extraParams": "{ShowAll: true}",
+                "limitParam": "Count",
+                "startParam": "StartIndex",
+                "url": "xml-proxy.php?/Dvr/GetUpcomingList",
+                "designer|userClassName": "MyAjaxProxy1"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen24121",
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "ProgramList.Programs",
+                        "totalProperty": "Count",
+                        "designer|userClassName": "MyJsonReader1"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen16646",
+            "type": "grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": null,
+                "property": null,
+                "sortProperty": "StartTime",
+                "designer|userClassName": "MyGrouper"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen20536",
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "record"
+                        ],
+                        "implHandler": [
+                            "return Ext.Date.format(Ext.Date.parseDate(record.get(\"StartTime\"), \"c\"), \"l j F Y\");"
+                        ],
+                        "designer|userClassName": "groupFn"
+                    },
+                    "customConfigs": [],
+                    "iconCls": "icon-basic-function",
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen22426",
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "transform",
+                        "designer|params": [
+                            "item"
+                        ],
+                        "implHandler": [
+                            "return Ext.Date.format(Ext.Date.parseDate(item, \"c\"), \"Ymd\");"
+                        ],
+                        "designer|userClassName": "transform"
+                    },
+                    "customConfigs": [],
+                    "iconCls": "icon-basic-function",
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

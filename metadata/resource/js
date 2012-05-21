@@ -1,0 +1,16 @@
+{
+    "id": "ExtBox1-ext-gen28461",
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "resources/js/constants.js"
+    },
+    "customConfigs": [],
+    "designerId": "5352695f-e92f-4223-bfe9-dd6152a98149",
+    "$viewOrder": 0,
+    "expanded": true
+}

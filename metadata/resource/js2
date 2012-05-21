@@ -1,0 +1,16 @@
+{
+    "id": "ExtBox1-ext-gen6391",
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "resources/js/to-title-case.js"
+    },
+    "customConfigs": [],
+    "designerId": "626bac40-6c28-48e2-ac80-77f9c0a525d5",
+    "$viewOrder": 4,
+    "expanded": true
+}

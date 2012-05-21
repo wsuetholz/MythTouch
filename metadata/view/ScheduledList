@@ -1,0 +1,46 @@
+{
+    "id": "ExtBox1-ext-gen26790",
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "ui": "round",
+        "itemCls": null,
+        "itemTpl": "<img src=\"{Channel.IconURL}\"  />\n<div class=\"list-schedule-item-recording-time\">{[ Ext.Date.format(Ext.Date.parse(values.StartTime, \"c\"), \"H:i\")  ]} - {[ Ext.Date.format(Ext.Date.parse(values.EndTime, \"c\"), \"H:i\") ]}</div>\n<div class=\"list-schedule-item-title\">{Title}</div>\n<div class=\"list-schedule-item-subtitle\">{SubTitle}</div>\n<div class=\"list-schedule-item-description\">{Description}</div>",
+        "store": "UpComingProgramStore",
+        "disclosureProperty": null,
+        "grouped": true,
+        "onItemDisclosure": true,
+        "designer|userClassName": "ScheduledList",
+        "designer|userAlias": "scheduledList"
+    },
+    "customConfigs": [],
+    "designerId": "94b915da-8d2b-4331-a323-f00664247172",
+    "$viewOrder": 2,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen4141",
+            "type": "delegateeventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onDataitemUpdatedata",
+                "implHandler": [
+                    "console.log(\"DataItemUpdate:\", component, newData, options);"
+                ],
+                "name": "updatedata",
+                "designer|targetType": "Ext.dataview.component.DataItem",
+                "designer|userClassName": "onDataitemUpdatedata"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

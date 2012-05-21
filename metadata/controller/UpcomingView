@@ -1,0 +1,64 @@
+{
+    "id": "ExtBox1-ext-gen44314",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "ScheduledView"
+        ],
+        "designer|userClassName": "UpcomingView"
+    },
+    "customConfigs": [],
+    "designerId": "2fda6e02-2178-4a10-a094-43fd67b8893a",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen45139",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListDisclose",
+                "implHandler": [
+                    "this.getMain().push({",
+                    "    xtype: 'recordingdetail',",
+                    "    data: record.data,",
+                    "    title: record.data.Title",
+                    "});"
+                ],
+                "name": "disclose",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "upcominglist",
+                "designer|userClassName": "onListDisclose"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen48147",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "main",
+                "selector": "upcomingview",
+                "xtype": "upcomingview",
+                "autoCreate": false,
+                "designer|userClassName": "main"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

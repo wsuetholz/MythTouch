@@ -1,0 +1,14 @@
+.senchasdk*
+.npmignore
+docs/
+examples/
+touch-2.0.1/src
+touch-2.0.1/version.txt
+touch-2.0.1/touch.jsb3
+touch-2.0.1/pkgs
+touch-2.0.1/release-notes.html
+touch-2.0.1/command
+touch-2.0.1/builds
+touch-2.0.1/license.txt
+touch-2.0.1/getting-started.html
+touch-2.0.1/index.html

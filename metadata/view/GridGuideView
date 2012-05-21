@@ -1,0 +1,77 @@
+{
+    "id": "ExtBox1-ext-gen4503",
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "ui": "light",
+        "layout": "fit",
+        "designer|userClassName": "GridGuideView",
+        "designer|userAlias": "gridguideview"
+    },
+    "customConfigs": [],
+    "designerId": "b85246c7-f7d7-4482-a757-c46a78c5680f",
+    "$viewOrder": 7,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen9880",
+            "type": "titlebar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Guide",
+                "designer|userClassName": "MyTitleBar"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen11289",
+                    "type": "selectfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": null,
+                        "maxWidth": null,
+                        "minWidth": null,
+                        "width": "75%",
+                        "label": null,
+                        "labelWidth": "35%",
+                        "name": "GuideStartTime",
+                        "options": "[\n{text: \"00:00\", value: \"00:00\"},\n{text: \"01:00\", value: \"01:00\"},\n{text: \"02:00\", value: \"02:00\"},\n{text: \"03:00\", value: \"03:00\"},\n{text: \"04:00\", value: \"04:00\"},\n{text: \"05:00\", value: \"05:00\"},\n{text: \"06:00\", value: \"06:00\"},\n{text: \"07:00\", value: \"07:00\"},\n{text: \"08:00\", value: \"08:00\"},\n{text: \"09:00\", value: \"09:00\"},\n{text: \"10:00\", value: \"10:00\"},\n{text: \"11:00\", value: \"11:00\"},\n{text: \"12:00\", value: \"12:00\"},\n{text: \"13:00\", value: \"13:00\"},\n{text: \"14:00\", value: \"14:00\"},\n{text: \"15:00\", value: \"15:00\"},\n{text: \"16:00\", value: \"16:00\"},\n{text: \"17:00\", value: \"17:00\"},\n{text: \"18:00\", value: \"18:00\"},\n{text: \"19:00\", value: \"19:00\"},\n{text: \"20:00\", value: \"20:00\"},\n{text: \"21:00\", value: \"21:00\"},\n{text: \"22:00\", value: \"22:00\"},\n{text: \"23:00\", value: \"23:00\"}\n]",
+                        "designer|userClassName": "MySelectField",
+                        "layout|flex": 1,
+                        "align": "right"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen28788",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {},
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen28960"
+        }
+    ]
+}

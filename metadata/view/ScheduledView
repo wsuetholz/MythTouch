@@ -1,0 +1,54 @@
+{
+    "id": "ExtBox1-ext-gen27046",
+    "type": "navigationview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "useTitleForBackButtonText": true,
+        "designer|userClassName": "ScheduledView",
+        "designer|userAlias": "scheduledView",
+        "container|animation": null
+    },
+    "customConfigs": [],
+    "designerId": "1641b6b4-b29a-4546-a238-bfed7a52e2d5",
+    "$viewOrder": 1,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen39324",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemTpl": null,
+                "title": "Scheduled"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen26790"
+        },
+        {
+            "id": "ExtBox1-ext-gen28072",
+            "type": "navigationbar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "tpl": null,
+                "designer|userClassName": "MyNavigationBar"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-navbar",
+            "expanded": true
+        }
+    ]
+}

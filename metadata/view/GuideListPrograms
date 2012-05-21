@@ -1,0 +1,18 @@
+{
+    "id": "ExtBox1-ext-gen58233",
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "itemTpl": "<div>List Item {Description}</div>",
+        "designer|userClassName": "GuideListPrograms",
+        "designer|userAlias": "guidelistprograms"
+    },
+    "customConfigs": [],
+    "designerId": "19ac14e6-6e91-45c7-b41f-ecb9a35034df",
+    "$viewOrder": 6,
+    "expanded": true
+}

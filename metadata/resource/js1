@@ -1,0 +1,16 @@
+{
+    "id": "ExtBox1-ext-gen5218",
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "resources/js/xdate.js"
+    },
+    "customConfigs": [],
+    "designerId": "0a01f2a6-360c-46ae-8997-68962d9fb9ce",
+    "$viewOrder": 1,
+    "expanded": true
+}
