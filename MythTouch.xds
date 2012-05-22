@@ -5,7 +5,7 @@
         "spacesToIndent": 4,
         "codeGenFormat": "Class",
         "exportPath": "/Volumes/Apache Web Server/sencha/MythTouch",
-        "extPath": "http://192.168.1.1/sencha//touch/",
+        "extPath": "../touch/",
         "senchaIoKey": "",
         "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
         "lineEnding": "LF",
@@ -107,14 +107,6 @@
             ],
             "className": "RecordingDetail"
         },
-        "1641b6b4-b29a-4546-a238-bfed7a52e2d5": {
-            "paths": [
-                "metadata/view/ScheduledView",
-                "app/view/override/ScheduledView.js",
-                "app/view/ScheduledView.js"
-            ],
-            "className": "ScheduledView"
-        },
         "a519079b-044e-43cf-a492-5f23ea86b6fa": {
             "paths": [
                 "metadata/view/GuideView",
@@ -125,11 +117,11 @@
         },
         "2fda6e02-2178-4a10-a094-43fd67b8893a": {
             "paths": [
-                "metadata/controller/UpcomingView",
-                "app/controller/override/UpcomingView.js",
-                "app/controller/UpcomingView.js"
+                "metadata/controller/ScheduledView",
+                "app/controller/override/ScheduledView.js",
+                "app/controller/ScheduledView.js"
             ],
-            "className": "UpcomingView"
+            "className": "ScheduledView"
         },
         "19ac14e6-6e91-45c7-b41f-ecb9a35034df": {
             "paths": [
@@ -184,13 +176,21 @@
                 "metadata/resource/js2"
             ],
             "className": "js2"
+        },
+        "cd3dcc8f-8fbf-44bf-a858-196385c36add": {
+            "paths": [
+                "metadata/view/ScheduledView",
+                "app/view/override/ScheduledView.js",
+                "app/view/ScheduledView.js"
+            ],
+            "className": "ScheduledView"
         }
     },
     "expandedState": {
         "data": false,
-        "model": false,
+        "model": true,
         "component": true,
         "controller": true,
-        "resource": false
+        "resource": true
     }
 }
