@@ -140,7 +140,58 @@ Ext.define('MythTouch.view.GridGuideView', {
                 ]
             },
             {
-                xtype: 'guidedataview'
+                xtype: 'container',
+                docked: 'top',
+                html: '',
+                id: 'ProgramTimes',
+                itemId: 'mycontainer4',
+                tpl: [
+                    ''
+                ],
+                layout: {
+                    type: 'vbox'
+                },
+                listeners: [
+                    {
+                        fn: function(component, options) {
+                            component.setHtml('<table width="100%" border="0" cellpadding="4" cellspaceing="2" class="x-toolbar-dark"><tr><td class="x-channel-heading">Channel</td>');
+                            for (i=0; i < 3; i++) {
+                                for (j=0; j < 3; j++) {
+                                    component.setHtml(component.getHtml() + '<td class="x-channel x-channel-heading-time">' + zeroPad(i,2) + ':' + zeroPad(j*15,2) +'</td>');
+                                }
+                            } 
+                            component.setHtml(component.getHtml() + '</tr></table>');
+                        },
+                        event: 'initialize'
+                    }
+                ]
+            },
+            {
+                xtype: 'guidedataview',
+                itemTpl: [
+                    '<table width="100%" border="0" cellpadding="4" cellspacing="2" class="list small">',
+                    '<tbody>',
+                    '<tpl for=".">',
+                    '   <tr>',
+                    '        <td class="x-channel-heading" halign="center"><img src="{IconURL}" style="padding: 5px;"><br />{ChannelName}</td>',
+                    '        <tpl for="Programs">',
+                    '                 <td class="program small cat_{[ values.Category.split("/")[0].toTitleCase().replace(" ", "_") ]} record_{[ recStatus[values.Recording.Status].toLowerCase().replace(" ", "_") ]}" valign="top">{Title}<tpl if="SubTitle != \'\'">:<br />{SubTitle}<br /></tpl>',
+                    '{%',
+                    'console.log("Programs Count:", values.Programs);',
+                    '',
+                    ' for (i =1; i < values.Stars; i++) {',
+                    '    if (i == 1) {',
+                    '       out.push("<br />");',
+                    '     }',
+                    '     out.push("★");',
+                    '}',
+                    '%}',
+                    '</td>',
+                    '        </tpl>',
+                    '  </tr>',
+                    '</tpl>',
+                    '</table>'
+                ]
             }
         ]
     }

@@ -31,19 +31,19 @@ Ext.application({
     ],
     views: [
         'RecordingDetail',
-        'ScheduledView',
         'GuideView',
         'GuideListChannels',
-        'ScheduledList',
         'GuideListPrograms',
         'Viewport',
         'GridGuideView',
-        'GuideDataView'
+        'GuideDataView',
+        'ScheduledList',
+        'ScheduledView'
     ],
     glossOnIcon: true,
     name: 'MythTouch',
     controllers: [
-        'UpcomingView'
+        'ScheduledView'
     ],
 
     launch: function() {

@@ -18,7 +18,6 @@ Ext.define('MythTouch.view.GuideDataView', {
     alias: 'widget.guidedataview',
 
     config: {
-        html: '<table width="100%" border="0" cellpadding="4" cellspaceing="2" class="list small"><tr><td class="x-channel">Channel</td><td>00:00</td><td>00:00</td><td>00:00</td><td>00:00</td></tr></table>',
         ui: 'light',
         scrollable: 'both',
         emptyText: 'Something went wrong, I can\'t find anything!',
@@ -28,8 +27,9 @@ Ext.define('MythTouch.view.GuideDataView', {
             '<table width="100%" border="0" cellpadding="4" cellspacing="2" class="list small">',
             '<tbody>',
             '<tpl for=".">',
+            '{% console.log("Programs Count:", values); %}',
             '   <tr>',
-            '        <td class="x-channel" halign="center"><img src="{IconURL}" style="padding: 5px;"><br />{ChannelName}</td>',
+            '        <td class="x-channel-heading" halign="center"><img src="{IconURL}" style="padding: 5px;"><br />{ChannelName}</td>',
             '        <tpl for="Programs">',
             '                 <td class="program small cat_{[ values.Category.split("/")[0].toTitleCase().replace(" ", "_") ]} record_{[ recStatus[values.Recording.Status].toLowerCase().replace(" ", "_") ]}" valign="top">{Title}<tpl if="SubTitle != \'\'">:<br />{SubTitle}<br /></tpl>',
             '{%',

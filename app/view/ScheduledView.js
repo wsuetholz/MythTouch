@@ -21,16 +21,12 @@ Ext.define('MythTouch.view.ScheduledView', {
     ],
 
     config: {
-        useTitleForBackButtonText: true,
         items: [
             {
                 xtype: 'scheduledList',
-                title: 'Scheduled'
+                title: 'Scheduled Programs'
             }
-        ],
-        navigationBar: {
-
-        }
+        ]
     }
 
 });

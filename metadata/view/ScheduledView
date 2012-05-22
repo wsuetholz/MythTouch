@@ -1,5 +1,5 @@
 {
-    "id": "ExtBox1-ext-gen27046",
+    "id": "ExtBox1-ext-gen15569",
     "type": "navigationview",
     "reference": {
         "name": "items",
@@ -7,18 +7,16 @@
     },
     "codeClass": null,
     "userConfig": {
-        "useTitleForBackButtonText": true,
         "designer|userClassName": "ScheduledView",
-        "designer|userAlias": "scheduledView",
-        "container|animation": null
+        "designer|userAlias": "scheduledView"
     },
     "customConfigs": [],
-    "designerId": "1641b6b4-b29a-4546-a238-bfed7a52e2d5",
+    "designerId": "cd3dcc8f-8fbf-44bf-a858-196385c36add",
     "$viewOrder": 1,
     "expanded": true,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen39324",
+            "id": "ExtBox1-ext-gen16587",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -26,29 +24,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemTpl": null,
-                "title": "Scheduled"
+                "title": "Scheduled Programs"
             },
             "customConfigs": [],
             "iconCls": "icon-linkedinstance",
             "expanded": true,
             "masterInstanceId": "ExtBox1-ext-gen26790"
-        },
-        {
-            "id": "ExtBox1-ext-gen28072",
-            "type": "navigationbar",
-            "reference": {
-                "name": "navigationBar",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "tpl": null,
-                "designer|userClassName": "MyNavigationBar"
-            },
-            "customConfigs": [],
-            "iconCls": "icon-navbar",
-            "expanded": true
         }
     ]
 }

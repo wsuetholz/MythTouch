@@ -21,7 +21,7 @@ Ext.define('MythTouch.view.RecordingDetail', {
         styleHtmlContent: true,
         scrollable: 'vertical',
         tpl: [
-            '<div>{Channel.ChanNum} {Channel.ChannelName}<br />{Title}</div><div>{SubTitle}</div><div>{Description}</div><div>RecStatus: {Recording.Status}<br />RecType:{Recording.Type}</div>'
+            '<div>{Channel.ChanNum} {Channel.ChannelName}<br />{Title}</div><div>{SubTitle}</div><div>{Description}</div><div>RecStatus: {[ recStatus[values.Recording.Status] ]}<br />RecType:{Recording.Type}</div>'
         ]
     }
 

@@ -28,17 +28,7 @@ Ext.define('MythTouch.view.ScheduledList', {
             '<div class="list-schedule-item-title">{Title}</div>',
             '<div class="list-schedule-item-subtitle">{SubTitle}</div>',
             '<div class="list-schedule-item-description">{Description}</div>'
-        ],
-        listeners: [
-            {
-                fn: 'onDataitemUpdatedata',
-                event: 'updatedata'
-            }
         ]
-    },
-
-    onDataitemUpdatedata: function(component, newData, options) {
-        console.log("DataItemUpdate:", component, newData, options);
     }
 
 });

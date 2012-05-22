@@ -7,10 +7,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "views": [
-            "ScheduledView"
-        ],
-        "designer|userClassName": "UpcomingView"
+        "designer|userClassName": "ScheduledView"
     },
     "customConfigs": [],
     "designerId": "2fda6e02-2178-4a10-a094-43fd67b8893a",
@@ -28,7 +25,7 @@
             "userConfig": {
                 "fn": "onListDisclose",
                 "implHandler": [
-                    "this.getMain().push({",
+                    "this.getScheduledView().push({",
                     "    xtype: 'recordingdetail',",
                     "    data: record.data,",
                     "    title: record.data.Title",
@@ -36,7 +33,7 @@
                 ],
                 "name": "disclose",
                 "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "upcominglist",
+                "designer|controlQuery": "scheduledList",
                 "designer|userClassName": "onListDisclose"
             },
             "customConfigs": [],
@@ -51,11 +48,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "main",
-                "selector": "upcomingview",
-                "xtype": "upcomingview",
+                "ref": "scheduledView",
+                "selector": "scheduledView",
+                "xtype": "scheduledView",
                 "autoCreate": false,
-                "designer|userClassName": "main"
+                "designer|userClassName": "scheduledView"
             },
             "customConfigs": [],
             "expanded": true

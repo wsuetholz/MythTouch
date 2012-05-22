@@ -89,21 +89,18 @@
 
 .x-channel {
     width:              8em !important;
-    height:             70px;
     padding:            0 !important;
     vertical-align:     middle;
-    background-color:   #404a69;
     white-space:        nowrap;
     text-align:         center;
     color:              #FFFFFF;
 }
-.x-channel img {
+.x-channel-heading img {
     position:           relative;
     top:                -4px;
     vertical-align:     middle;
     max-width:          70px;
-    max-height:         30px;
-    width:              38px;
+    width:              45px;
 }
 .x-channel a {
     display:            block;
@@ -113,6 +110,19 @@
 .x-channel .x-preferred {
     margin-left:        5px;
     font-size:          200%;
+}
+
+.x-channel-heading {
+    width:              8em !important;
+    vertical-align:     middle;
+    white-space:        nowrap;
+    text-align:         center;
+    color:              #FFFFFF;
+}
+
+.x-channel-heading-time {
+    vertical-align:     middle;
+    text-align:         left;
 }
 
 #list_head {

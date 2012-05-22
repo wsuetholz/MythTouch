@@ -20,3 +20,13 @@ String.prototype.toTitleCase = function () {
     return match.charAt(0).toUpperCase() + match.substr(1);
   });
 };
+
+function zeroPad(
+  a, // the number to convert 
+  b // number of resulting characters
+){
+  return (
+    1e15 + a + // combine with large number
+    "" // convert to string
+  ).slice(-b) // cut leading "1"
+}

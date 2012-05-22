@@ -23,23 +23,7 @@ Ext.define('MythTouch.view.GuideListChannels', {
         onItemDisclosure: true,
         itemTpl: [
             '<div style="text-align: middle;"><img src="{IconURL}" style="width: 35px;"  />{ChanNum} - {ChannelName}</div>'
-        ],
-        listeners: [
-            {
-                fn: 'onListDisclose',
-                event: 'disclose'
-            }
         ]
-    },
-
-    onListDisclose: function(list, record, target, index, e, options) {
-        console.log("List: ", list);
-        console.log("Record: ", record);
-        console.log("Target: ", target);
-        console.log("Index: ", index);
-        console.log("E: ", e);
-        console.log("Options: ", options);
-        console.log("this.data: ", this.data);
     }
 
 });

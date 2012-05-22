@@ -20,4 +20,3 @@ var recStatus = {
                   10: 'Inactive',
                   11: 'Never Record'
                 }
-      

@@ -18,32 +18,5 @@
     "customConfigs": [],
     "designerId": "2f20d084-7f88-4f23-95fc-84fbf21a2866",
     "$viewOrder": 5,
-    "expanded": false,
-    "cn": [
-        {
-            "id": "ExtBox1-ext-gen4717",
-            "type": "basiceventbinding",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "onListDisclose",
-                "implHandler": [
-                    "console.log(\"List: \", list);",
-                    "console.log(\"Record: \", record);",
-                    "console.log(\"Target: \", target);",
-                    "console.log(\"Index: \", index);",
-                    "console.log(\"E: \", e);",
-                    "console.log(\"Options: \", options);",
-                    "console.log(\"this.data: \", this.data);"
-                ],
-                "name": "disclose",
-                "designer|userClassName": "onListDisclose"
-            },
-            "customConfigs": [],
-            "expanded": true
-        }
-    ]
+    "expanded": true
 }

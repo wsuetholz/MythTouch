@@ -20,27 +20,5 @@
     "customConfigs": [],
     "designerId": "94b915da-8d2b-4331-a323-f00664247172",
     "$viewOrder": 2,
-    "expanded": true,
-    "cn": [
-        {
-            "id": "ExtBox1-ext-gen4141",
-            "type": "delegateeventbinding",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "onDataitemUpdatedata",
-                "implHandler": [
-                    "console.log(\"DataItemUpdate:\", component, newData, options);"
-                ],
-                "name": "updatedata",
-                "designer|targetType": "Ext.dataview.component.DataItem",
-                "designer|userClassName": "onDataitemUpdatedata"
-            },
-            "customConfigs": [],
-            "expanded": true
-        }
-    ]
+    "expanded": true
 }
