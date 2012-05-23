@@ -1,0 +1,23 @@
+{
+    "id": "ExtBox1-ext-gen35034",
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "docked": "top",
+        "html": "",
+        "id": "programTimes",
+        "itemId": "programTimes",
+        "tpl": "",
+        "layout": "vbox",
+        "designer|userClassName": "ProgramTimes",
+        "designer|userAlias": "programTimes"
+    },
+    "customConfigs": [],
+    "designerId": "342444cf-427e-41dd-9218-07d8b1d2bc88",
+    "$viewOrder": 9,
+    "expanded": true
+}

@@ -24,6 +24,16 @@ Ext.define('MythTouch.view.ScheduledView', {
         items: [
             {
                 xtype: 'scheduledList',
+                cls: [
+                    'x-scheduled-view-component'
+                ],
+                itemTpl: [
+                    '<img src="{Channel.IconURL}"  />',
+                    '<div class="list-schedule-item-recording-time">{[ Ext.Date.format(Ext.Date.parse(values.StartTime, "c"), "H:i")  ]} - {[ Ext.Date.format(Ext.Date.parse(values.EndTime, "c"), "H:i") ]}</div>',
+                    '<div class="list-schedule-item-title">{Title}</div>',
+                    '<div class="list-schedule-item-subtitle">{SubTitle}</div>',
+                    '<div class="list-schedule-item-description">{Description}</div>'
+                ],
                 title: 'Scheduled Programs'
             }
         ]

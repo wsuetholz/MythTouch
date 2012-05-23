@@ -26,8 +26,8 @@ Ext.application({
         'UpComingChannelModel'
     ],
     stores: [
-        'ProgramGuide',
-        'UpComingProgramStore'
+        'UpComingProgramStore',
+        'ProgramGuide'
     ],
     views: [
         'RecordingDetail',
@@ -38,12 +38,14 @@ Ext.application({
         'GridGuideView',
         'GuideDataView',
         'ScheduledList',
-        'ScheduledView'
+        'ScheduledView',
+        'ProgramTimes'
     ],
     glossOnIcon: true,
     name: 'MythTouch',
     controllers: [
-        'ScheduledView'
+        'ScheduledView',
+        'GridGuideView'
     ],
 
     launch: function() {

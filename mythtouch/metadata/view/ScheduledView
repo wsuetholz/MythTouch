@@ -7,6 +7,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "cls": null,
         "designer|userClassName": "ScheduledView",
         "designer|userAlias": "scheduledView"
     },
@@ -24,6 +25,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "baseCls": null,
+                "cls": [
+                    "x-scheduled-view-component"
+                ],
+                "itemTpl": "<img src=\"{Channel.IconURL}\"  />\n<div class=\"list-schedule-item-recording-time\">{[ Ext.Date.format(Ext.Date.parse(values.StartTime, \"c\"), \"H:i\")  ]} - {[ Ext.Date.format(Ext.Date.parse(values.EndTime, \"c\"), \"H:i\") ]}</div>\n<div class=\"list-schedule-item-title\">{Title}</div>\n<div class=\"list-schedule-item-subtitle\">{SubTitle}</div>\n<div class=\"list-schedule-item-description\">{Description}</div>",
                 "title": "Scheduled Programs"
             },
             "customConfigs": [],

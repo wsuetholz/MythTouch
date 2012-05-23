@@ -66,7 +66,7 @@ Ext.define('MythTouch.store.ProgramGuide', {
         theproxy = store.getProxy();
         theproxy.setExtraParam('StartTime', Ext.Date.format(dt, 'Y-m-d\\TH:i:00'));
 
-        dt.addHours(4);
+        dt.addHours(3);
         theproxy.setExtraParam('EndTime', Ext.Date.format(dt, 'Y-m-d\\TH:i:00'));
 
     },

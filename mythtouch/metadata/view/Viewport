@@ -24,7 +24,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "html": "<span align=\"center\"><h1>MythTouch</h1></span> <div>Welcome to MythTouch your touch based interface to the scheduling side of MythTV</div> <div>Select one of the tabs at the bottom to get started</div>",
+                "cls": [
+                    "x-form"
+                ],
+                "html": "<span align=\"center\"><h1>MythTouch</h1></span>",
                 "styleHtmlContent": true,
                 "tpl": null,
                 "ui": "light",
@@ -34,7 +37,32 @@
                 "iconCls": "info"
             },
             "customConfigs": [],
-            "expanded": true
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen5885",
+                    "type": "label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": null,
+                        "bottom": null,
+                        "centered": true,
+                        "docked": "bottom",
+                        "height": null,
+                        "html": " <div style=\"text-align: center;\">Welcome to MythTouch your touch based interface to the scheduling side of MythTV<br /><br />Select one of the tabs at the bottom to get started</div>",
+                        "tpl": null,
+                        "ui": "light",
+                        "width": null,
+                        "designer|userClassName": "MyLabel"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
         },
         {
             "id": "ExtBox1-ext-gen18844",

@@ -27,7 +27,6 @@ Ext.define('MythTouch.view.GuideDataView', {
             '<table width="100%" border="0" cellpadding="4" cellspacing="2" class="list small">',
             '<tbody>',
             '<tpl for=".">',
-            '{% console.log("Programs Count:", values); %}',
             '   <tr>',
             '        <td class="x-channel-heading" halign="center"><img src="{IconURL}" style="padding: 5px;"><br />{ChannelName}</td>',
             '        <tpl for="Programs">',

@@ -15,8 +15,8 @@
             "UpComingChannelModel"
         ],
         "stores": [
-            "ProgramGuide",
-            "UpComingProgramStore"
+            "UpComingProgramStore",
+            "ProgramGuide"
         ],
         "views": [
             "RecordingDetail",
@@ -27,12 +27,14 @@
             "GridGuideView",
             "GuideDataView",
             "ScheduledList",
-            "ScheduledView"
+            "ScheduledView",
+            "ProgramTimes"
         ],
         "glossOnIcon": true,
         "name": "MythTouch",
         "controllers": [
-            "ScheduledView"
+            "ScheduledView",
+            "GridGuideView"
         ]
     },
     "customConfigs": [],

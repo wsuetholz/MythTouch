@@ -24,12 +24,24 @@ Ext.define('MythTouch.view.Viewport', {
         items: [
             {
                 xtype: 'container',
-                html: '<span align="center"><h1>MythTouch</h1></span> <div>Welcome to MythTouch your touch based interface to the scheduling side of MythTV</div> <div>Select one of the tabs at the bottom to get started</div>',
+                cls: [
+                    'x-form'
+                ],
+                html: '<span align="center"><h1>MythTouch</h1></span>',
                 styleHtmlContent: true,
                 ui: 'light',
                 scrollable: true,
                 title: 'Welcome',
-                iconCls: 'info'
+                iconCls: 'info',
+                items: [
+                    {
+                        xtype: 'label',
+                        centered: true,
+                        docked: 'bottom',
+                        html: ' <div style="text-align: center;">Welcome to MythTouch your touch based interface to the scheduling side of MythTV<br /><br />Select one of the tabs at the bottom to get started</div>',
+                        ui: 'light'
+                    }
+                ]
             },
             {
                 xtype: 'scheduledView',

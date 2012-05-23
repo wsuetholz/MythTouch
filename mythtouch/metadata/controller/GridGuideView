@@ -1,0 +1,78 @@
+{
+    "id": "ExtBox1-ext-gen3879",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GridGuideView"
+    },
+    "customConfigs": [],
+    "designerId": "09c6113d-6edb-4d80-90a6-381d50700190",
+    "$viewOrder": 1,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen9688",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onGuideDataViewInitialize",
+                "implHandler": [
+                    "ProgTimes = this.getProgramTimes();",
+                    "ProgTimes.setHtml('<table width=\"100%\" border=\"0\" cellpadding=\"4\" cellspaceing=\"2\" class=\"x-toolbar-dark\"><tr><td class=\"x-channel-heading\">Channel</td>');",
+                    "",
+                    "StartTime = XDate(Ext.getStore('ProgramGuide').getProxy().getExtraParams().StartTime, true); // create as UTC date",
+                    "",
+                    "hour = parseInt(StartTime.toLocaleTimeString().split(\":\")[0], 10); // convert to local time ",
+                    "min = parseInt(StartTime.toLocaleTimeString().split(\":\")[1], 10); // convert to local time",
+                    "for (i=0; i < 3; i++) {",
+                    "    hours = hour + i;",
+                    "    if (hours > 24) {",
+                    "        hours = hours % 24;",
+                    "    }",
+                    "    for (j=0; j < 4; j++) {",
+                    "        mins = min + (j * 15);",
+                    "        if (mins > 60) {",
+                    "            mins = mins % 60;",
+                    "        }",
+                    "        ProgTimes.setHtml(ProgTimes.getHtml() + '<td class=\"x-channel x-channel-heading-time\">' + zeroPad(hours,2) + ':' + zeroPad(mins,2) +'</td>');",
+                    "    }",
+                    "} ",
+                    "ProgTimes.setHtml(ProgTimes.getHtml() + '</tr></table>');",
+                    ""
+                ],
+                "name": "initialize",
+                "designer|targetType": "Ext.dataview.DataView",
+                "designer|controlQuery": "guidedataview",
+                "designer|userClassName": "onGuideDataViewInitialize"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen4390",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "programTimes",
+                "selector": "programTimes",
+                "xtype": "programTimes",
+                "autoCreate": false,
+                "designer|userClassName": "programTimes"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

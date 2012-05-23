@@ -10,6 +10,11 @@
     right: 0.44em;
 }
 
+.x-body .x-scroll-view {
+    background-image: url(../images/linen.png);
+}
+
+
 .list-schedule-item-title {
     font-size: 90%;
     white-space: nowrap;
@@ -235,3 +240,5 @@
     .link {
         cursor:             pointer;
     }
+
+

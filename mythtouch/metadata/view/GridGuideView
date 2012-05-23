@@ -15,7 +15,7 @@
     "customConfigs": [],
     "designerId": "b85246c7-f7d7-4482-a757-c46a78c5680f",
     "$viewOrder": 7,
-    "expanded": true,
+    "expanded": false,
     "cn": [
         {
             "id": "ExtBox1-ext-gen9880",
@@ -60,51 +60,18 @@
             ]
         },
         {
-            "id": "ExtBox1-ext-gen35034",
-            "type": "container",
+            "id": "ExtBox1-ext-gen7243",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
-            "userConfig": {
-                "docked": "top",
-                "html": "",
-                "id": "ProgramTimes",
-                "itemId": "mycontainer4",
-                "tpl": "",
-                "layout": "vbox",
-                "designer|userClassName": "MyContainer4"
-            },
+            "userConfig": {},
             "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
             "expanded": true,
-            "cn": [
-                {
-                    "id": "ExtBox1-ext-gen36421",
-                    "type": "basiceventbinding",
-                    "reference": {
-                        "name": "listeners",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "fn": "onMycontainer4Initialize",
-                        "implHandler": [
-                            "component.setHtml('<table width=\"100%\" border=\"0\" cellpadding=\"4\" cellspaceing=\"2\" class=\"x-toolbar-dark\"><tr><td class=\"x-channel-heading\">Channel</td>');",
-                            "for (i=0; i < 3; i++) {",
-                            "    for (j=0; j < 3; j++) {",
-                            "        component.setHtml(component.getHtml() + '<td class=\"x-channel x-channel-heading-time\">' + zeroPad(i,2) + ':' + zeroPad(j*15,2) +'</td>');",
-                            "    }",
-                            "} ",
-                            "component.setHtml(component.getHtml() + '</tr></table>');"
-                        ],
-                        "name": "initialize",
-                        "designer|userClassName": "onMycontainer4Initialize"
-                    },
-                    "customConfigs": [],
-                    "expanded": true
-                }
-            ]
+            "masterInstanceId": "ExtBox1-ext-gen35034"
         },
         {
             "id": "ExtBox1-ext-gen28788",
@@ -115,7 +82,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemTpl": "<table width=\"100%\" border=\"0\" cellpadding=\"4\" cellspacing=\"2\" class=\"list small\">\n<tbody>\n<tpl for=\".\">\n   <tr>\n        <td class=\"x-channel-heading\" halign=\"center\"><img src=\"{IconURL}\" style=\"padding: 5px;\"><br />{ChannelName}</td>\n        <tpl for=\"Programs\">\n                 <td class=\"program small cat_{[ values.Category.split(\"/\")[0].toTitleCase().replace(\" \", \"_\") ]} record_{[ recStatus[values.Recording.Status].toLowerCase().replace(\" \", \"_\") ]}\" valign=\"top\">{Title}<tpl if=\"SubTitle != ''\">:<br />{SubTitle}<br /></tpl>\n{%\nconsole.log(\"Programs Count:\", values.Programs);\n\n for (i =1; i < values.Stars; i++) {\n    if (i == 1) {\n       out.push(\"<br />\");\n     }\n     out.push(\"★\");\n}\n%}\n</td>\n        </tpl>\n  </tr>\n</tpl>\n</table>"
+                "itemTpl": null
             },
             "customConfigs": [],
             "iconCls": "icon-linkedinstance",

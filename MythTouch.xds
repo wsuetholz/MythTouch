@@ -184,13 +184,29 @@
                 "app/view/ScheduledView.js"
             ],
             "className": "ScheduledView"
+        },
+        "09c6113d-6edb-4d80-90a6-381d50700190": {
+            "paths": [
+                "metadata/controller/GridGuideView",
+                "app/controller/override/GridGuideView.js",
+                "app/controller/GridGuideView.js"
+            ],
+            "className": "GridGuideView"
+        },
+        "342444cf-427e-41dd-9218-07d8b1d2bc88": {
+            "paths": [
+                "metadata/view/ProgramTimes",
+                "app/view/override/ProgramTimes.js",
+                "app/view/ProgramTimes.js"
+            ],
+            "className": "ProgramTimes"
         }
     },
     "expandedState": {
-        "data": false,
-        "model": true,
+        "data": true,
+        "model": false,
         "component": true,
         "controller": true,
-        "resource": true
+        "resource": false
     }
 }
