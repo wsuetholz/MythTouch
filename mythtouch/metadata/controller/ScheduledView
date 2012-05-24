@@ -26,7 +26,7 @@
                 "fn": "onListDisclose",
                 "implHandler": [
                     "this.getScheduledView().push({",
-                    "    xtype: 'recordingdetail',",
+                    "    xtype: 'scheduleDetail',",
                     "    data: record.data,",
                     "    title: record.data.Title",
                     "});"

@@ -33,7 +33,7 @@ Ext.define('MythTouch.controller.ScheduledView', {
 
     onListDisclose: function(list, record, target, index, e, options) {
         this.getScheduledView().push({
-            xtype: 'recordingdetail',
+            xtype: 'scheduleDetail',
             data: record.data,
             title: record.data.Title
         });

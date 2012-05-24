@@ -45,7 +45,7 @@ Ext.define('MythTouch.view.Viewport', {
             },
             {
                 xtype: 'scheduledView',
-                title: 'Schedule',
+                title: 'Scheduled',
                 iconCls: 'time'
             },
             {

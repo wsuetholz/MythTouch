@@ -14,6 +14,119 @@
     background-image: url(../images/linen.png);
 }
 
+.schedule-detail {
+    border-radius: .8em;
+    background: #eee;
+    margin: .7em;
+    padding: .8em;
+}
+
+.schedule-detail-title {
+    font-weight: bold;
+    font-size: 120%;
+    text-align: center;
+    padding-bottom: .25em;
+}
+
+.schedule-detail-subtitle {
+    color: #444444;
+    font-size: 95%;
+    text-align: center;
+    padding-bottom: .25em;
+}
+
+.schedule-detail-description {
+    color: #222222;
+    padding-bottom: 1.5em;
+    padding-top: .25em;
+}
+
+.schedule-detail-recording-time {
+    color: #666666;
+    font-size: 65%;
+    float: left;
+}
+.schedule-detail-recording-channel {
+    color: #666666;
+    font-size: 65%;
+    float: right;
+}
+
+.schedule-detail-channelicon {
+	position: absolute;
+	bottom: 0.95em;
+	left: 0.44em;
+	width: 38px;
+}
+
+.x-list-item-label img {
+    float: left;
+    margin: 2px;
+    width: 38px;    
+}
+
+
+.x-item-selected .list-item-title
+{
+    color:#ffffff;
+}
+.x-item-selected .list-schedule-item-narrative
+{
+    color:#ffffff;
+}
+
+.x-list-header {
+    text-shadow: rgba(255, 255, 255, 0.6) 2px 2px;
+    color: rgb(255,255,0) !important;
+}
+
+
+.right_arrow {
+    float: right;
+}
+.left_arrow {
+    float: left;
+}
+
+.x-channel {
+    width:              8em !important;
+    padding:            0 !important;
+    vertical-align:     middle;
+    white-space:        nowrap;
+    text-align:         center;
+    color:              #FFFFFF;
+}
+.x-channel-heading img {
+    position:           relative;
+    top:                -4px;
+    vertical-align:     middle;
+    max-width:          70px;
+    width:              45px;
+}
+.x-channel a {
+    display:            block;
+    text-align:         center;
+    padding:            5px;
+}
+.x-channel .x-preferred {
+    margin-left:        5px;
+    font-size:          200%;
+}
+
+.x-channel-heading {
+    width:              77px !important;
+    vertical-align:     middle;
+    white-space:        nowrap;
+    text-align:         center;
+    color:              #FFFFFF;
+}
+
+.x-channel-heading-time {
+    vertical-align:     middle;
+    text-align:         left;
+    font-size: 0.6em;
+    width: 8%;
+}
 
 .list-schedule-item-title {
     font-size: 90%;
@@ -54,8 +167,7 @@
     position: absolute;
     bottom: 4em;
     right: 0.44em;
-    color: 
-    #666666;
+    color: #666666;
     font-size: 65%;
     white-space: nowrap;
     overflow: hidden;
@@ -69,66 +181,6 @@
 	width: 38px;
 }
 
-.x-list-item-label img {
-    float: left;
-    margin: 2px;
-    width: 38px;    
-}
-
-
-.x-item-selected .list-item-title
-{
-    color:#ffffff;
-}
-.x-item-selected .list-schedule-item-narrative
-{
-    color:#ffffff;
-}
-
-.right_arrow {
-    float: right;
-}
-.left_arrow {
-    float: left;
-}
-
-.x-channel {
-    width:              8em !important;
-    padding:            0 !important;
-    vertical-align:     middle;
-    white-space:        nowrap;
-    text-align:         center;
-    color:              #FFFFFF;
-}
-.x-channel-heading img {
-    position:           relative;
-    top:                -4px;
-    vertical-align:     middle;
-    max-width:          70px;
-    width:              45px;
-}
-.x-channel a {
-    display:            block;
-    text-align:         center;
-    padding:            5px;
-}
-.x-channel .x-preferred {
-    margin-left:        5px;
-    font-size:          200%;
-}
-
-.x-channel-heading {
-    width:              8em !important;
-    vertical-align:     middle;
-    white-space:        nowrap;
-    text-align:         center;
-    color:              #FFFFFF;
-}
-
-.x-channel-heading-time {
-    vertical-align:     middle;
-    text-align:         left;
-}
 
 #list_head {
     width:              80%;

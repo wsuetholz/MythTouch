@@ -73,7 +73,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Schedule",
+                "title": "Scheduled",
                 "iconCls": "time"
             },
             "customConfigs": [],

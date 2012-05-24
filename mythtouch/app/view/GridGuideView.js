@@ -144,9 +144,23 @@ Ext.define('MythTouch.view.GridGuideView', {
                 xtype: 'programTimes'
             },
             {
-                xtype: 'guidedataview'
+                xtype: 'guidedataview',
+                id: 'GudieDataView',
+                itemId: 'mydataview1'
+            }
+        ],
+        listeners: [
+            {
+                fn: 'onDataviewItemTap',
+                event: 'itemtap',
+                delegate: '#GudieDataView'
             }
         ]
+    },
+
+    onDataviewItemTap: function(dataview, index, target, record, e, options) {
+        console.log(target.getId(), target.getUniqueId());
+
     }
 
 });

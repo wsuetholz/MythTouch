@@ -19,7 +19,7 @@
             "ProgramGuide"
         ],
         "views": [
-            "RecordingDetail",
+            "ScheduleDetail",
             "GuideView",
             "GuideListChannels",
             "GuideListPrograms",

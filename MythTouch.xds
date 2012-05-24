@@ -101,11 +101,11 @@
         },
         "3b512525-45d1-49cd-b6cd-0a7c5d359b81": {
             "paths": [
-                "metadata/view/RecordingDetail",
-                "app/view/override/RecordingDetail.js",
-                "app/view/RecordingDetail.js"
+                "metadata/view/ScheduleDetail",
+                "app/view/override/ScheduleDetail.js",
+                "app/view/ScheduleDetail.js"
             ],
-            "className": "RecordingDetail"
+            "className": "ScheduleDetail"
         },
         "a519079b-044e-43cf-a492-5f23ea86b6fa": {
             "paths": [
@@ -203,7 +203,7 @@
         }
     },
     "expandedState": {
-        "data": true,
+        "data": false,
         "model": false,
         "component": true,
         "controller": true,

@@ -15,7 +15,7 @@
     "customConfigs": [],
     "designerId": "b85246c7-f7d7-4482-a757-c46a78c5680f",
     "$viewOrder": 7,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen9880",
@@ -82,12 +82,36 @@
             },
             "codeClass": null,
             "userConfig": {
+                "id": "GudieDataView",
+                "itemId": "mydataview1",
                 "itemTpl": null
             },
             "customConfigs": [],
             "iconCls": "icon-linkedinstance",
             "expanded": true,
-            "masterInstanceId": "ExtBox1-ext-gen28960"
+            "masterInstanceId": "ExtBox1-ext-gen28960",
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen7489",
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onDataviewItemTap",
+                        "implHandler": [
+                            "console.log(target.getId(), target.getUniqueId());",
+                            ""
+                        ],
+                        "name": "itemtap",
+                        "designer|userClassName": "onDataviewItemTap"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
         }
     ]
 }

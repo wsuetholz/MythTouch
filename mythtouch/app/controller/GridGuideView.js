@@ -49,7 +49,7 @@ Ext.define('MythTouch.controller.GridGuideView', {
                 if (mins > 60) {
                     mins = mins % 60;
                 }
-                ProgTimes.setHtml(ProgTimes.getHtml() + '<td class="x-channel x-channel-heading-time">' + zeroPad(hours,2) + ':' + zeroPad(mins,2) +'</td>');
+                ProgTimes.setHtml(ProgTimes.getHtml() + '<td width="8%" class="x-channel x-channel-heading-time">' + zeroPad(hours,2) + ':' + zeroPad(mins,2) +'</td>');
             }
         } 
         ProgTimes.setHtml(ProgTimes.getHtml() + '</tr></table>');

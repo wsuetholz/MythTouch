@@ -30,7 +30,7 @@ Ext.application({
         'ProgramGuide'
     ],
     views: [
-        'RecordingDetail',
+        'ScheduleDetail',
         'GuideView',
         'GuideListChannels',
         'GuideListPrograms',

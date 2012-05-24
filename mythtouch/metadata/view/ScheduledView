@@ -7,7 +7,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "cls": null,
         "designer|userClassName": "ScheduledView",
         "designer|userAlias": "scheduledView"
     },
